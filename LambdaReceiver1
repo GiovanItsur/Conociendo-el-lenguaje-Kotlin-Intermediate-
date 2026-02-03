@@ -1,0 +1,15 @@
+fun fetchData(callback: StringBuilder.() -> Unit) {
+    val builder = StringBuilder("Data received")
+    builder.callback()
+}
+
+fun main() {
+    fetchData {
+        append(" - Processed.")
+        println(this.toString())
+        // Write your code here
+        // Data received - Processed
+    }
+}
+
+//Estas ayudan mucho ya que e dejan acceder a las propiedades de un objeto directamente (usando this) sin tener que nombrarlo.
