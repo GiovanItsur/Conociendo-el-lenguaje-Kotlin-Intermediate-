@@ -4,3 +4,5 @@ fun main() {
     println(1.isPositive())
     // true
 }
+
+//Este tipo de función es muy interesante porque te permite realizar una acción en un espacio reducido y fácil de leer de manera eficiente, lo cual nos puede ayudar a ordenar mejor nuestro código.
