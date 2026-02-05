@@ -1,0 +1,22 @@
+import kotlin.math.pow
+
+// Write your code here
+
+
+
+fun calculateCompoundInterest(P: Double, r: Double, n: Int, t: Int): Double {
+    return P*(r/n + 1).pow(t*n)
+    // Write your code here
+}
+
+fun main() {
+    val principal = 1000.0
+    val rate = 0.05
+    val timesCompounded = 4
+    val years = 5
+    val amount = calculateCompoundInterest(principal, rate, timesCompounded, years)
+    println("The accumulated amount is: $amount")
+    // The accumulated amount is: 1282.0372317085844
+}
+
+//La integración de librerías y APIs en Kotlin destaca por su interoperabilidad nativa con Java y el uso de DSLs expresivos que simplifican configuraciones complejas. Esto permite aprovechar un ecosistema maduro mientras se mantiene una sintaxis moderna, facilitando la creación de aplicaciones modulares y la implementación de funcionalidades externas de manera eficiente y segura.
